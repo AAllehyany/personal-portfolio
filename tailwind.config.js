@@ -5,7 +5,11 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'nunito': ['nunito']
+      }
+    },
   },
   variants: {},
   plugins: [],

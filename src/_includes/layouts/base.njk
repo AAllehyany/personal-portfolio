@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <title>{{ title }}</title>
-     <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    {% include "../components/navigation.njk" %}
-    <main class="p-12">
-      <h1 class="text-3xl mb-8">{{title}}</h1>
+  <body class="bg-gray-900">
+    {# {% include "../components/navigation.njk" %} #}
+    <main class="container mx-auto max-w-screen-lg">
       {{ content | safe }}
     </main>
     <script src="/assets/main.js"></script>
