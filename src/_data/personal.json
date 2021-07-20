@@ -6,5 +6,23 @@
   "phone": "+966541146703",
   "technology": [
     "NodeJS", "GoLang", "Python", "React", "MongoDB", "SSG"
+  ],
+  "projects": [
+    {
+      "title": "A Game List Website",
+      "link": "https://gbvs-fights.netlify.app/"
+    },
+    {
+      "title": "A Responsive Health Coach Website",
+      "link": "https://bshaierallehyany.com"
+    },
+    {
+      "title": "Python Web Scraper",
+      "link": "https://github.com/AAllehyany/vg-scraper"
+    },
+    {
+      "title": "A NodeJS Deck Builder Back-end",
+      "link": "https://github.com/AAllehyany/decks-project"
+    }
   ]
 }
