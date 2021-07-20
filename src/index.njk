@@ -12,12 +12,16 @@ layout: layouts/base.njk
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-2 w-full">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2 w-full">
     <div class="flex flex-col w-full border p-3 border-blue-300">
       <h3 class="text-xl text-blue-300 font-nunito font-bold text-center mb-4">Information and Links</h3>
       <a href="{{personal.github}}" class="mb-2 text-md text-blue-300 ">github.com/aallehyany</a>
       <p class="mb-2 text-md text-blue-300 ">{{personal.email}}</p>
       <p class="mb-2 text-md text-blue-300 ">{{personal.phone}}</p>
+    </div>
+    <div class="flex flex-col w-full border p-2 border-green-300">
+      <h3 class="text-xl text-green-300 font-nunito font-bold text-center mb-4">Technology</h3>
+      <p class="text-md text-green-300 mb-2 font-medium">{% for skill in personal.technology %} {{skill}} {% endfor %}</p>
     </div>
     <div class="flex flex-col w-full border p-3 border-yellow-300">
       <h3 class="text-xl text-yellow-300 font-nunito font-bold text-center mb-4">Education</h3>
@@ -25,10 +29,6 @@ layout: layouts/base.njk
       <p class="text-md text-yellow-300 mb-2">Carleton University, Canada</p>
       <p class="text-md text-yellow-300 mb-2">GPA: 10.8/12</p>
       <p class="text-md text-yellow-300 mb-2">Date: June, 2020</p>
-    </div>
-    <div class="flex flex-col w-full border p-2 border-green-300">
-      <h3 class="text-xl text-green-300 font-nunito font-bold text-center mb-4">Technology</h3>
-      <p class="text-md text-green-300 mb-2 font-medium">{% for skill in personal.technology %} {{skill}} {% endfor %}</p>
     </div>
     <div class="flex flex-col w-full border p-3 border-purple-200 ">
       <h3 class="text-xl text-purple-200   font-nunito font-bold text-center mb-4">Projects</h3>
